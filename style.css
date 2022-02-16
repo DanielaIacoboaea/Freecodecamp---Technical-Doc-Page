@@ -89,10 +89,14 @@ header {
 }
 .navigation li a{
     display: inline-block;
-    padding: 0 1.5rem; 
+    padding: 0 1.5rem;
     width: 100%;
     color: #333;
     font-size: max(1.2rem, 1.2vw);
+}
+
+.navigation li{
+    margin-left: 0;
 }
 
 .navigation li a:hover,
