@@ -56,7 +56,7 @@ code[class*=language-]{
 /*=====================================
 2. Navigation 
 =====================================*/
-header {
+.header-nav {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -159,7 +159,7 @@ input[type=checkbox]:checked ~ .navigation{
     .nav-burger-label{
         display: none;
     }
-    header{
+    .header-nav{
         height: 160vh;
         position: sticky;
         top: 0;

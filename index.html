@@ -14,13 +14,13 @@
 </head>
 <body>
     <div class="content-wrapper">
-        <header>
+        <header class="header-nav">
             <input type="checkbox" id="nav-burger" class="nav-burger">
             <label for="nav-burger" class="nav-burger-label">
             <span></span>
             </label>
             <nav id="navbar" class="navigation">
-                <h1>Python Documentation</h1>
+                <header><h1>Python Documentation</h1></header>
                 <ul>
                     <li><a class="nav-link" href="#Python_Introduction">Python Introduction</a></li>
                     <li><a class="nav-link" href="#Python_Syntax">Python Syntax</a></li>
@@ -31,19 +31,19 @@
                     <li><a class="nav-link" href="#Python_Tuples">Python Tuples</a></li>
                     <li><a class="nav-link" href="#Python_Sets">Python Sets</a></li>
                     <li><a class="nav-link" href="#Python_Dictionaries">Python Dictionaries</a></li>
-                    <li><a class="nav-link" href="#Python_If_Else">Python If ... Else</a></li>
+                    <li><a class="nav-link" href="#Python_If_Else">Python If Else</a></li>
                     <li><a class="nav-link" href="#Python_While_Loops">Python While Loops</a></li>
                     <li><a class="nav-link" href="#Python_For_Loops">Python For Loops</a></li>
                     <li><a class="nav-link" href="#Python_Functions">Python Functions</a></li>
                     <li><a class="nav-link" href="#Python_Classes_and_Objects">Python Classes and Objects</a></li>
-                    <li><a class="nav-link" href="#Sources">Sources</a></li>
+                    <li><a class="nav-link" href="#Python_Sources">Python Sources</a></li>
                 </ul>
             </nav>
         </header>
 
         <main id="main-doc">
             <section class="main-section" id="Python_Introduction">
-                <h2>Python Introduction</h2>
+                <header><h2>Python Introduction</h2></header>
                 <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
                 <p>It is used for:</p>
                 <ul>
@@ -57,7 +57,7 @@
                 <pre class="language-py"><code>print("Hello, World!")</code></pre>
             </section>
             <section class="main-section" id="Python_Syntax">
-                <h2>Python Syntax</h2>
+                <header><h2>Python Syntax</h2></header>
                 <h3>Execute Python Syntax</h3>
                 <p>Python syntax can be executed by writing directly in the Command Line:</p>
                 <pre class="language-py"><code>>>> print("Hello, World!")</code></pre>
@@ -81,7 +81,7 @@ if 5 > 2:
         print("Five is greater than two!")</code></pre>
             </section>
             <section class="main-section" id="Python_Variables">
-                <h2>Python Variables</h2>
+                <header><h2>Python Variables</h2></header>
                 <p>Variables are containers for storing data values.</p>
                 <h3>Creating Variables</h3>
                 <p>Python has no command for declaring a variable.</p>
@@ -107,7 +107,7 @@ print(type(x))
 print(type(y))</code></pre>
             </section>
             <section class="main-section" id="Python_User_Input">
-                <h2>Python User Input</h2>
+                <header><h2>Python User Input</h2></header>
                 <p>Python allows for user input.</p>
                 <p>The method is a bit different in Python 3.6 than Python 2.7.</p>
                 <ul>
@@ -123,7 +123,7 @@ print("Username is: " + username)</code></pre>
                 <p class="notes">Python stops executing when it comes to the <span class="keyword">input()</span> function, and continues when the user has given some input.</p>
             </section>
             <section class="main-section" id="Python_Data_Types">
-                <h2>Python Data Types</h2>
+                <header><h2>Python Data Types</h2></header>
                 <h3>Built-in Data Types</h3>
                 <p>Python has the following data types built-in by default, in these categories:</p>
                 <table>
@@ -227,7 +227,7 @@ print("Username is: " + username)</code></pre>
                 </table>
             </section>
             <section class="main-section" id="Python_Lists">
-                <h2>Python Lists</h2>
+                <header><h2>Python Lists</h2></header>
                 <p>Lists are used to store multiple items in a single variable.</p>
                 <p>Lists are one of 4 built-in data types in Python used to store collections of data and are created using square brackets:</p>
                 <h4>Example</h4>
@@ -274,7 +274,7 @@ for i in range(len(thislist)):
   print(thislist[i])</code></pre>
             </section>
             <section class="main-section" id="Python_Tuples">
-                <h2>Python Tuples</h2>
+                <header><h2>Python Tuples</h2></header>
                 <p>Tuples are used to store multiple items in a single variable.</p>
                 <p>Tuple is one of 4 built-in data types in Python used to store collections of data, which is ordered and unchangeable.</p>
                 <p>Tuples are written with round brackets.</p>
@@ -295,7 +295,7 @@ print(thistuple)</code></pre>
 print(thistuple)</code></pre>
             </section>
             <section class="main-section" id="Python_Sets">
-                <h2>Python Sets</h2>
+                <header><h2>Python Sets</h2></header>
                 <p>Sets are used to store multiple items in a single variable.</p>
                 <p>A set is a collection which is <i>unordered, unchangeable*,</i>and <i>unindexed.</i></p>
                 <p class="notes">*Note: Set items are unchangeable, but you can remove items and add new items.</p>
@@ -312,7 +312,7 @@ set2 = {1, 5, 7, 9, 3}
 set3 = {True, False, False}</code></pre>
             </section>
             <section class="main-section" id="Python_Dictionaries">
-                <h2>Python Dictionaries</h2>
+                <header><h2>Python Dictionaries</h2></header>
                 <p>Dictionaries are used to store data values in key:value pairs.</p>
                 <p>A dictionary is a collection which is ordered*, changeable and do not allow duplicates.</p>
                 <p class="notes">As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</p>
@@ -356,7 +356,7 @@ print(thisdict["brand"])</code></pre>
 }</code></pre>
             </section>
             <section class="main-section" id="Python_If_Else">
-                <h2>Python If Else</h2>
+                <header><h2>Python If Else</h2></header>
                 <p>Python supports the usual logical conditions from mathematics:</p>
                 <ul>
                     <li>Equals: a == b</li>
@@ -396,7 +396,7 @@ else:
   print("a is greater than b")</code></pre>
             </section>
             <section class="main-section" id="Python_While_Loops">
-                <h2>Python While Loops</h2>
+                <header><h2>Python While Loops</h2></header>
                 <p>With the <span class="keyword">while</span> loop we can execute a set of statements as long as a condition is true.</p>
                 <h4>Example</h4>
                 <pre class="language-py"><code>i = 1
@@ -421,7 +421,7 @@ while i < 6:
   print(i)</code></pre>
             </section>
             <section class="main-section" id="Python_For_Loops">
-                <h2>Python For Loops</h2>
+                <header><h2>Python For Loops</h2></header>
                 <p>A <span class="keyword">for</span> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
                 <p>This is less like the <span class="keyword">for</span> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
                 <p>With the <span class="keyword">for</span> loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
@@ -444,7 +444,7 @@ else:
   pass</code></pre>
             </section>
             <section class="main-section" id="Python_Functions">
-                <h2>Python Functions</h2>
+                <header><h2>Python Functions</h2></header>
                 <p>A function is a block of code which only runs when it is called.</p>
                 <p>You can pass data, known as parameters, into a function.</p>
                 <p>A function can return data as a result.</p>
@@ -492,7 +492,7 @@ print(my_function(9))</code></pre>
   pass</code></pre>
             </section>
             <section class="main-section" id="Python_Classes_and_Objects">
-                <h2>Python Classes and Objects</h2>
+                <header><h2>Python Classes and Objects</h2></header>
                 <p>Almost everything in Python is an object, with its properties and methods.</p>
                 <p>A <span class="keyword">Class</span> is like an object constructor, or a "blueprint" for creating objects.</p>
                 <h3>Create a Class</h3>
@@ -553,8 +553,8 @@ p1.myfunc()</code></pre>
                 <pre class="language-py"><code>class Person:
   pass</code></pre>
             </section>
-            <section class="main-section" id="Sources">
-                <h2>Python Sources</h2>
+            <section class="main-section" id="Python_Sources">
+                <header><h2>Python Sources</h2></header>
                 <p>Credits to <span class="keyword">W3Schools</span>, all the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp" target="blank">their website.</a></p>
             </section>
         </main>
